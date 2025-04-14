@@ -1,0 +1,30 @@
+{
+  "name": "@july_cm/scrape-helper",
+  "version": "0.0.1",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.0",
+    "@electron-forge/maker-dmg": "^7.8.0",
+    "@electron-forge/maker-squirrel": "^7.8.0",
+    "@electron-forge/maker-zip": "^7.8.0",
+    "@electron-forge/plugin-vite": "7.8.0",
+    "@electron-forge/shared-types": "^7.8.0",
+    "@july_cm/eslint-config": "^2.3.0",
+    "@types/react": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
+    "electron": "^35.1.5",
+    "eslint": "^9.24.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.6"
+  }
+}
