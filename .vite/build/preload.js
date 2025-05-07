@@ -1,1 +1,1 @@
-"use strict";
+"use strict";const i=require("electron");i.contextBridge.exposeInMainWorld("fileApi",{loadSettings:()=>i.ipcRenderer.invoke("file:load-settings"),saveSettings:e=>i.ipcRenderer.invoke("file:save-settings",e),selectDirectory:()=>i.ipcRenderer.invoke("file:select-directory"),findMedia:e=>i.ipcRenderer.invoke("file:find-media",e)});i.contextBridge.exposeInMainWorld("scrapeApi",{animate:e=>i.ipcRenderer.invoke("scrape:animate",e),av:e=>i.ipcRenderer.invoke("scrape:av",e),onReport:e=>i.ipcRenderer.on("report-message",(n,r)=>e(r))});
